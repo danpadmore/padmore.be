@@ -3,70 +3,103 @@
 <head>
 <title>Dan Padmore - Software developer specialized in .NET and backend systems</title>
 
-<link rel="stylesheet" type="text/css" href="metro.min.css">
-<style id="customize-metro-stylesheet">
-header {
-	margin-top: 3%;
-	margin-bottom: 3%;
-}
-
-.connect {
-	margin-bottom: 2%;
-}
-
-h3 {
-	margin-bottom: 2%;
-}
-</style>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
 <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Dan Padmore - Software developer specialized in .NET and backend systems">
 <meta name="keywords" content="dan,padmore,software,developer,dotnet,backend,antwerp,belgium" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body { padding-top: 50px; }
+
+.profile-photo {
+	width: 12.5em;
+	height: 12.5em;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	background: url(dan-padmore.jpg) no-repeat;
+	background-size:100%;
+	}
+
+ img.topic-photo {
+	width: 6em;
+	height: 6em;
+ }
+
+ span.topic-photo {
+	 font-size: 6em;
+	 color: #333;
+ }
+
+ .topic-photo:hover {
+	 opacity: 0.5;
+ }
+
+ .topics {
+	 text-align: center;
+ }
+</style>
 </head>
 
 <body>
 
-<div class="flex-grid">
-<div class="row flex-just-center">
-<div class="auto-size">
+<nav class="navbar navbar-inverse navbar-fixed-top">
+	<div class="container-fluid">
+		<div class="collapse navbar-collapse">
+			
+		</div>
+	</div>
+</nav>
 
-<header>
-<h1>Hi, I&#39;m Dan Padmore</h1>
-<h2>Software developer <small>specialized in <a href="https://www.microsoft.com/net" target="_blank">.NET</a> and backend systems</small></h2>
-<address>Operating out of Antwerp, Belgium</address>
-</header>
-
-<div class="bg-grayLighter padding20 connect">
-	<p class="text-accent">If you want to connect, you can find me on <a href="http://be.linkedin.com/pub/dan-padmore/2b/632/154" target="_blank">LinkedIn</a></p>
-	<p class="text-accent">To get a more detailed view on my resume, head over to <a href="http://careers.stackoverflow.com/padmore" target="_blank">Stack Overflow Careers</a></p>
+<div class="jumbotron">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-2"><div class="profile-photo" title="Hello!"></div></div>
+  			<div class="col-md-10">
+				<h1>Hi, I'm Dan Padmore
+					<br /><small>Software developer specialized in .NET and backend systems</small>
+				</h1>
+			</div>
+		</div>
+	</div>
 </div>
 
-<section>
-<h3>Some non-work-related attempts at greatness...</h3>
-	
-<ul class="simple-list red-bullet">
-	<li><a href="https://sparetimecode.wordpress.com/" target="_blank">Spare Time Code</a></li>
-	<li><a href="http://www.codeproject.com/Articles/818265/NET-Works-with-Nest-Guide-to-calling-Nest-API-fro" target="_blank">Guide to calling NEST API from C#</a></li>
-	<li><a href="http://www.codeproject.com/Articles/525620/Recording-audio-to-WAV-with-WASAPI-in-Windows-Stor" target="_blank">Guide to use WASAPI in C#</a></li>
-</ul>
-		
-<ul class="simple-list green-bullet">
-	<li><a href="http://danpadmore.github.io/homebased/" target="_blank">Homebased</a> - geofencing and <a href="https://www.ifttt.com" target="_blank">IFTTT</a> mashup on Windows Phone 8.1</li>
-	<li><a href="https://smartercharger.codeplex.com/" target="_blank">Smarter Charger</a> - Windows Phone 8.1 app proof of concept that integrates with <a href="http://www.fifthplay.com" target="_blank">fifthplay</a> to automatically stop charging a full phone battery</li>
-	<li><a href="https://bitbucket.org/padmo/jinnitoimdbinf" target="_blank">Jinni to IMDb in F#</a> - tool to migrate my movie ratings from <a href="http://www.jinni.com/" target="_blank">Jinni</a> that stopped its service to <a href="http://imdb.com" target="_blank">IMDb</a></li>
-	<li><a href="http://wachtminderina.codeplex.com/" target="_blank">Wait Less</a> - Windows Phone 7 app I made for <a href="http://opendata.antwerpen.be/" target="_blank">Apps for Antwerp</a></li>
-</ul>
-	
-<ul class="simple-list yellow-bullet">
-	<li><a href="http://40winksmusic.com" target="_blank">40 Winks</a> - Instrumental Hip Hop with a Twist </li>
-	<li><a href="https://padmo.bandcamp.com/album/change-the-channel" target="_blank">Change the channel</a> - a short, fun audio excursion into tv land</li>
-</ul>
-</section>
+<div class="container topics">
+	<div class="col-lg-4">
+		<a href="http://be.linkedin.com/pub/dan-padmore/2b/632/154" target="_blank">
+			<img src="linkedin-128px.png" alt="LinkedIn" class="topic-photo" />
+		</a>
+		<h2>Work time</h2>
+		<p>If you want to connect, you can find me on <a href="http://be.linkedin.com/pub/dan-padmore/2b/632/154" target="_blank">LinkedIn</a></p>
+		<p>To get another view on my resume, head over to <a href="http://careers.stackoverflow.com/padmore" target="_blank">Stack Overflow Careers</a></p>
+	</div>
 
+	<div class="col-lg-4">
+		<a href="https://github.com/danpadmore" target="_blank">
+			<img src="GitHub-Mark-120px-plus.png" alt="Spare Time Code" class="topic-photo" />
+		</a>
+		<h2>Spare Time</h2>
+		<p><a href="https://sparetimecode.wordpress.com/" target="_blank">Check out my blog</a>, which is more of a public notebook, but you might enjoy the music.</p>
+		<p>Or fire up your code editor and join me on <a href="https://github.com/danpadmore" target="_blank">GitHub</a>.</p>
+		<p>If you like instrumental hip hop with a twist, check out <a href="http://40winksmusic.com/" target="_blank">40 Winks</a>
+			and <a href="https://padmo.bandcamp.com/album/change-the-channel" target="_blank">Change the Channel</a>.</p>
+	</div>
+
+	<div class="col-lg-4">
+		<a href="http://be.linkedin.com/pub/dan-padmore/2b/632/154" target="_blank">
+			<span class="glyphicon glyphicon-earphone topic-photo" aria-hidden="true"></span>
+		</a>
+		<h2>Recruiters</h2>
+		<p>Unfortunately I cannot respond to all unsolicited requests.</p>
+		<p>However, if you are convinced you have a unique opportunity, 
+			please contact me on <a href="http://be.linkedin.com/pub/dan-padmore/2b/632/154" target="_blank">LinkedIn</a> with as much detail as possible (description, location, salary).</p>
+		<p>If the offer really is interesting, I will definitely get back at you!</p>
+	</div>
 </div>
-</div>
-</div>
+
 
 </body>
 </html>
