@@ -1,0 +1,29 @@
+body { padding-top: 50px; }
+
+.profile-photo {
+	width: 12.5em;
+	height: 12.5em;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	background: url(dan-padmore.jpg) no-repeat;
+	background-size:100%;
+	}
+
+ img.topic-photo {
+	width: 6em;
+	height: 6em;
+ }
+
+ span.topic-photo {
+	 font-size: 6em;
+	 color: #333;
+ }
+
+ .topic-photo:hover {
+	 opacity: 0.5;
+ }
+
+ .topics {
+	 text-align: center;
+ }
