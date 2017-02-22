@@ -1,13 +1,18 @@
 body { padding-top: 50px; }
 
+footer a, footer a:visited {
+	color: #777;
+}
+
 .profile-photo {
 	width: 12.5em;
 	height: 12.5em;
 	border-radius: 50%;
 	-webkit-border-radius: 50%;
 	-moz-border-radius: 50%;
-	background: url(dan-padmore.jpg) no-repeat;
+	background: url(../dan-padmore.jpg) no-repeat;
 	background-size:100%;
+	border: 0.2em solid #fff;
 	}
 
  img.topic-photo {
