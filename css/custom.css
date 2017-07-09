@@ -26,6 +26,7 @@
 body {
 	background: rgba(0, 0, 0, 0) linear-gradient(to right, rgb(19, 78, 94), rgb(113, 178, 128)) repeat scroll 0% 0%;
 	color: #fff;
+	font-family: "Lucida Console", Monaco, monospace;
 }
 
 adress {
