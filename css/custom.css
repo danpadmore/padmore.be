@@ -36,3 +36,16 @@ adress {
 .card {
 	color: #134e5e;
 }
+
+.heading {
+	margin-left: 1em;
+}
+
+.lead {
+	margin-top: 1.5em;
+	padding-left: 0.5em;
+}
+
+.chatbot {
+	min-height: 450px;
+}
