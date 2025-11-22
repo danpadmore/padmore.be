@@ -506,9 +506,18 @@ footer nav a {
     justify-items: center;
   }
 
-  .hero-badge {
+  .hero-image {
     grid-row: 1;
-    margin-bottom: var(--spacing-md);
+  }
+
+  .hero-content {
+    grid-row: 2;
+  }
+
+  .hero-badge {
+    grid-row: 3;
+    margin-top: var(--spacing-md);
+    margin-bottom: 0;
   }
 
   .expertise-grid {
@@ -520,8 +529,20 @@ footer nav a {
     text-align: center;
   }
 
+  .cta-header {
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-md);
+  }
+
+  .cta-header h2 {
+    margin-bottom: 0;
+  }
+
   .linkedin-button {
     justify-content: center;
+    width: 100%;
+    max-width: 300px;
   }
 
   .timeline-item {
