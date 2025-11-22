@@ -2,340 +2,1118 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Dan Padmore - Software Developer specialized in web applications and system integration"
+      content="Dan Padmore - Technical Architect specialized in Azure, .NET, and enterprise integration. Multi-cloud certified architect with 20+ years hands-on development experience. Based in Antwerp, Belgium."
     />
     <meta
       name="keywords"
-      content="dan,padmore,software,architect,web,applications,systems,integration,microsoft,dotnet,backend,ai,antwerp,belgium"
+      content="technical architect,solution architect,azure architect,cloud architect,.net architect,enterprise architect,multi-cloud,microservices,system integration,azure,aws,gcp,antwerp,belgium,freelance"
     />
     <meta name="author" content="Dan Padmore" />
     <meta name="B-verify" content="4add5e8bee403d2f8b4b146cb11e91690c6042d7" />
 
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
-      crossorigin="anonymous"
+    <!-- Open Graph / Social Media -->
+    <meta property="og:title" content="Dan Padmore - Technical Architect" />
+    <meta
+      property="og:description"
+      content="Multi-cloud certified Technical Architect with 20+ years hands-on development experience. Specializing in Azure, .NET, and enterprise integration."
     />
-    <script
-      type="text/javascript"
-      async
-      src="https://cdn.credly.com/assets/utilities/embed.js"
-    ></script>
+    <meta property="og:type" content="profile" />
+    <meta property="og:url" content="https://padmore.be" />
+    <meta
+      property="og:image"
+      content="https://padmore.be/dan-padmore-padmore.be.jpg"
+    />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Dan Padmore - Technical Architect" />
+    <meta
+      name="twitter:description"
+      content="Multi-cloud certified Technical Architect with 20+ years hands-on development experience."
+    />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://padmore.be" />
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>🎓</text></svg>"
+    />
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Dan Padmore",
+        "jobTitle": "Technical Architect",
+        "description": "Technical Architect with expert-level development skills, specializing in Azure, .NET, and enterprise system integration",
+        "url": "https://padmore.be",
+        "image": "https://padmore.be/dan-padmore-padmore.be.jpg",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Antwerp",
+          "addressCountry": "BE"
+        },
+        "sameAs": [
+          "https://www.linkedin.com/in/dan-padmore-1546322b",
+          "https://github.com/danpadmore",
+          "https://learn.microsoft.com/en-us/users/padmore/",
+          "https://www.credly.com/users/dan-padmore",
+          "https://www.goodreads.com/user/show/48044313-dan",
+          "https://danpadmore.github.io/blog/"
+        ],
+        "knowsAbout": [
+          "Technical Architecture",
+          "Solutions Architecture",
+          "Cloud Architecture",
+          "Azure",
+          "AWS",
+          "Google Cloud",
+          ".NET",
+          "C#",
+          "ASP.NET",
+          "Microservices",
+          "Domain-Driven Design",
+          "Event-Driven Architecture",
+          "System Integration",
+          "Kubernetes",
+          "Artificial Intelligence",
+          "Enterprise Integration Patterns"
+        ]
+      }
+    </script>
 
     <title>
-      Dan Padmore | Software Developer specialized in web applications and
-      system integration
+      Dan Padmore | Technical Architect | Azure, .NET, Enterprise Integration
     </title>
+
+    <style>
+      :root {
+        --color-bg: #ffffff;
+        --color-surface: #f8f9fa;
+        --color-surface-hover: #e9ecef;
+        --color-text: #212529;
+        --color-text-secondary: #6c757d;
+        --color-border: #dee2e6;
+        --color-primary: #0066cc;
+        --color-primary-hover: #0052a3;
+        --color-accent: #ffc107;
+        --color-success: #28a745;
+        --spacing-xs: 0.5rem;
+        --spacing-sm: 1rem;
+        --spacing-md: 1.5rem;
+        --spacing-lg: 2rem;
+        --spacing-xl: 3rem;
+        --radius: 8px;
+        --shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        --shadow-lg: 0 4px 12px rgba(0, 0, 0, 0.15);
+        --max-width: 1200px;
+        --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          "Helvetica Neue", Arial, sans-serif;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --color-bg: #1a1a1a;
+          --color-surface: #2d2d2d;
+          --color-surface-hover: #3a3a3a;
+          --color-text: #e9ecef;
+          --color-text-secondary: #adb5bd;
+          --color-border: #495057;
+          --color-primary: #4dabf7;
+          --color-primary-hover: #74c0fc;
+          --color-accent: #ffd43b;
+          --shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+          --shadow-lg: 0 4px 12px rgba(0, 0, 0, 0.4);
+        }
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: var(--font-sans);
+        line-height: 1.6;
+        color: var(--color-text);
+        background-color: var(--color-bg);
+        font-size: clamp(16px, 2vw, 18px);
+      }
+
+      .container {
+        max-width: var(--max-width);
+        margin: 0 auto;
+        padding: var(--spacing-md);
+      }
+
+      /* Hero Section */
+      .hero {
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        gap: var(--spacing-lg);
+        align-items: center;
+        margin-bottom: var(--spacing-xl);
+        padding: var(--spacing-lg);
+        background: var(--color-surface);
+        border-radius: var(--radius);
+      }
+
+      .hero-badge {
+        width: clamp(100px, 12vw, 140px);
+        text-align: center;
+      }
+
+      .hero-badge a {
+        text-decoration: none;
+        color: var(--color-text);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: var(--spacing-xs);
+        transition: transform 0.2s;
+      }
+
+      .hero-badge a:hover {
+        transform: translateY(-4px);
+        text-decoration: none;
+      }
+
+      .hero-badge img {
+        max-width: 100%;
+        height: auto;
+      }
+
+      .hero-badge small {
+        font-size: 0.75rem;
+        color: var(--color-text-secondary);
+      }
+
+      .hero-image {
+        width: clamp(80px, 15vw, 150px);
+        height: clamp(80px, 15vw, 150px);
+        border-radius: 50%;
+        object-fit: cover;
+      }
+
+      .hero-content h1 {
+        font-size: clamp(1.75rem, 4vw, 2.5rem);
+        margin-bottom: var(--spacing-xs);
+        color: var(--color-text);
+      }
+
+      .hero-content .tagline {
+        font-size: clamp(1.1rem, 2.5vw, 1.4rem);
+        color: var(--color-text-secondary);
+        margin-bottom: var(--spacing-sm);
+      }
+
+      .hero-content .location {
+        font-size: 0.95rem;
+        color: var(--color-text-secondary);
+      }
+
+      /* Call to Action */
+      .cta {
+        background: var(--color-surface);
+        border: 2px solid var(--color-border);
+        padding: var(--spacing-lg);
+        border-radius: var(--radius);
+        margin: var(--spacing-xl) 0;
+        box-shadow: var(--shadow);
+      }
+
+      .cta h2 {
+        font-size: clamp(1.3rem, 2.5vw, 1.75rem);
+        margin-bottom: var(--spacing-sm);
+        color: var(--color-text);
+      }
+
+      .cta-content {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        gap: var(--spacing-lg);
+        align-items: center;
+      }
+
+      .cta-text p {
+        font-size: clamp(0.95rem, 1.8vw, 1.05rem);
+        color: var(--color-text-secondary);
+        margin-bottom: 0;
+        line-height: 1.5;
+      }
+
+      .linkedin-button {
+        display: inline-flex;
+        align-items: center;
+        gap: var(--spacing-xs);
+        background: #0077b5;
+        color: white;
+        padding: 12px 24px;
+        border-radius: 4px;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 16px;
+        transition: background 0.2s;
+        white-space: nowrap;
+        min-height: 44px;
+      }
+
+      .linkedin-button:hover {
+        background: #006399;
+        color: white;
+        text-decoration: none;
+      }
+
+      .linkedin-button svg {
+        width: 20px;
+        height: 20px;
+        fill: white;
+      }
+
+      /* Value Proposition */
+      .value-prop {
+        background: var(--color-surface);
+        padding: var(--spacing-md);
+        border-radius: var(--radius);
+        border-left: 4px solid var(--color-primary);
+        margin-bottom: var(--spacing-xl);
+      }
+
+      .value-prop p {
+        margin-bottom: var(--spacing-sm);
+      }
+
+      .value-prop p:last-child {
+        margin-bottom: 0;
+      }
+
+      .value-prop strong {
+        color: var(--color-primary);
+      }
+
+      /* Sections */
+      section {
+        margin-bottom: var(--spacing-xl);
+      }
+
+      h2 {
+        font-size: clamp(1.5rem, 3vw, 2rem);
+        margin-bottom: var(--spacing-md);
+        color: var(--color-text);
+      }
+
+      h3 {
+        font-size: clamp(1.2rem, 2.5vw, 1.5rem);
+        margin-bottom: var(--spacing-sm);
+        color: var(--color-text);
+      }
+
+      /* Expertise Grid */
+      .expertise-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: var(--spacing-md);
+        margin-bottom: var(--spacing-lg);
+      }
+
+      .expertise-card {
+        background: var(--color-surface);
+        padding: var(--spacing-md);
+        border-radius: var(--radius);
+        box-shadow: var(--shadow);
+      }
+
+      .expertise-card h3 {
+        margin-bottom: var(--spacing-sm);
+      }
+
+      .expertise-card ul {
+        list-style: none;
+        padding-left: 0;
+      }
+
+      .expertise-card li {
+        padding: var(--spacing-xs) 0;
+        padding-left: var(--spacing-md);
+        position: relative;
+      }
+
+      .expertise-card li::before {
+        content: "▸";
+        position: absolute;
+        left: 0;
+        color: var(--color-primary);
+      }
+
+      mark {
+        background: var(--color-accent);
+        color: var(--color-text);
+        padding: 2px 6px;
+        border-radius: 3px;
+      }
+
+      /* Certification Timeline */
+      .timeline {
+        position: relative;
+        padding: var(--spacing-md) 0;
+      }
+
+      .timeline-item {
+        display: grid;
+        grid-template-columns: 80px 1fr;
+        gap: var(--spacing-md);
+        margin-bottom: var(--spacing-md);
+        position: relative;
+      }
+
+      .timeline-year {
+        font-weight: 600;
+        color: var(--color-primary);
+        text-align: right;
+      }
+
+      .timeline-content {
+        padding-left: var(--spacing-md);
+        border-left: 2px solid var(--color-border);
+        padding-bottom: var(--spacing-sm);
+      }
+
+      .timeline-content::before {
+        content: "";
+        position: absolute;
+        left: 80px;
+        width: 12px;
+        height: 12px;
+        background: var(--color-primary);
+        border-radius: 50%;
+        margin-left: calc(var(--spacing-md) - 7px);
+      }
+
+      /* Badges */
+      .badge-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(120px, 150px));
+        gap: var(--spacing-md);
+        justify-content: center;
+        margin: var(--spacing-lg) 0;
+      }
+
+      .badge-item {
+        text-align: center;
+      }
+
+      .badge-item a {
+        text-decoration: none;
+        color: var(--color-text);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: var(--spacing-xs);
+        transition: transform 0.2s;
+      }
+
+      .badge-item a:hover {
+        transform: translateY(-4px);
+      }
+
+      .badge-item img {
+        max-width: 100%;
+        height: auto;
+      }
+
+      .badge-item small {
+        font-size: 0.85rem;
+        color: var(--color-text-secondary);
+      }
+
+      /* Learning Section */
+      .learning-highlight {
+        background: linear-gradient(
+          135deg,
+          rgba(0, 102, 204, 0.1),
+          rgba(0, 102, 204, 0.05)
+        );
+        padding: var(--spacing-md);
+        border-radius: var(--radius);
+        border-left: 4px solid var(--color-success);
+        margin: var(--spacing-lg) 0;
+      }
+
+      .learning-highlight h3 {
+        color: var(--color-success);
+        margin-bottom: var(--spacing-sm);
+      }
+
+      /* Certifications List */
+      .cert-category {
+        margin-bottom: var(--spacing-lg);
+      }
+
+      .cert-category h3 {
+        color: var(--color-primary);
+        margin-bottom: var(--spacing-sm);
+        padding-bottom: var(--spacing-xs);
+        border-bottom: 2px solid var(--color-border);
+      }
+
+      .cert-category ul {
+        list-style: none;
+        padding-left: 0;
+      }
+
+      .cert-category li {
+        padding: var(--spacing-xs) 0;
+        padding-left: var(--spacing-md);
+        position: relative;
+      }
+
+      .cert-category li::before {
+        content: "✓";
+        position: absolute;
+        left: 0;
+        color: var(--color-success);
+        font-weight: bold;
+      }
+
+      /* Links */
+      a {
+        color: var(--color-primary);
+        text-decoration: none;
+      }
+
+      a:hover {
+        color: var(--color-primary-hover);
+        text-decoration: underline;
+      }
+
+      /* Footer */
+      footer {
+        margin-top: var(--spacing-xl);
+        padding-top: var(--spacing-lg);
+        border-top: 1px solid var(--color-border);
+      }
+
+      footer nav ul {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        gap: var(--spacing-sm) var(--spacing-md);
+        justify-content: center;
+      }
+
+      footer nav a {
+        color: var(--color-text-secondary);
+        font-size: 0.9rem;
+      }
+
+      /* Responsive */
+      @media (max-width: 768px) {
+        .hero {
+          grid-template-columns: 1fr;
+          text-align: center;
+          justify-items: center;
+        }
+
+        .hero-badge {
+          grid-row: 1;
+          margin-bottom: var(--spacing-md);
+        }
+
+        .expertise-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .cta-content {
+          grid-template-columns: 1fr;
+          text-align: center;
+        }
+
+        .linkedin-button {
+          justify-content: center;
+        }
+
+        .timeline-item {
+          grid-template-columns: 60px 1fr;
+        }
+
+        .badge-grid {
+          grid-template-columns: repeat(auto-fit, minmax(100px, 120px));
+        }
+
+        footer nav ul {
+          flex-direction: column;
+          align-items: center;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .container {
+          padding: var(--spacing-sm);
+        }
+
+        .hero,
+        .value-prop,
+        .cta {
+          padding: var(--spacing-md);
+        }
+
+        .timeline-item {
+          grid-template-columns: 1fr;
+        }
+
+        .timeline-year {
+          text-align: left;
+        }
+      }
+    </style>
   </head>
 
   <body>
     <div class="container">
       <main>
-        <div class="row">
-          <div class="col">
-            <div class="card mb-3 border-0">
-              <div class="row no-gutters">
-                <div class="col-md-2">
-                  <img
-                    src="dan-padmore-padmore.be.jpg"
-                    class="card-img rounded-circle"
-                    alt="Dan Padmore"
-                  />
-                </div>
-                <div class="col-md-10">
-                  <div class="card-body">
-                    <h1 class="card-title">Dan Padmore</h1>
-                    <p class="card-text lead">
-                      Software Developer specialized in web applications and
-                      system integration
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
+        <!-- Hero Section -->
+        <section class="hero">
+          <img
+            src="dan-padmore-padmore.be.jpg"
+            class="hero-image"
+            alt="Dan Padmore - Technical Architect"
+            loading="eager"
+          />
+          <div class="hero-content">
+            <h1>Dan Padmore</h1>
+            <p class="tagline">
+              Technical Architect — Microsoft Azure and .NET from design to
+              deployment
+            </p>
+            <p class="location">
+              🎯 20+ years experience | 📍 Based in Antwerp, Belgium
+            </p>
           </div>
-        </div>
-
-        <div class="row">
-          <div class="col">
-            <ul class="mt-4">
-              <li>
-                Specialized in
-                <mark>web applications and system integration</mark>
-              </li>
-              <li>
-                +20 years
-                <a href="https://dotnet.microsoft.com/">.NET</a> -
-                <a href="https://dotnet.microsoft.com/en-us/languages/csharp"
-                  >C#</a
-                >
-                -
-                <a href="https://learn.microsoft.com/en-us/aspnet/core/"
-                  >ASP.NET</a
-                >
-              </li>
-              <li>
-                <mark>Microsoft Certified</mark>: Azure Solutions Architect
-                Expert
-              </li>
-              <li>Professional experience <mark>since 2006</mark></li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-md-2 col-6 text-center">
+          <div class="hero-badge">
             <a
               href="https://learn.microsoft.com/en-us/users/padmore/credentials/b8ad23f8da37f263"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <img
                 src="microsoft-certified-expert-badge.svg"
                 alt="Microsoft Certified: Azure Solutions Architect Expert"
                 title="Microsoft Certified: Azure Solutions Architect Expert"
-                width="150px"
-                height="200px"
+                loading="eager"
               />
-              Azure Solutions Architect Expert
+              <small>Azure Solutions Architect Expert</small>
             </a>
           </div>
-          <div class="col-md-2 col-6 text-center">
-            <a
-              href="https://learn.microsoft.com/en-us/users/padmore/credentials/a34e35cff3c8141e"
-            >
-              <img
-                src="microsoft-certified-associate-badge.svg"
-                alt="Microsoft Certified: Azure AI Engineer Associate"
-                title="Microsoft Certified: Azure AI Engineer Associate"
-                width="150px"
-                height="200px"
-              />
-              Azure AI Engineer Associate
-            </a>
-          </div>
-          <div class="col-md-2 col-6 text-center">
-            <a
-              href="https://learn.microsoft.com/api/credentials/share/en-us/padmore/D97FEA5AFF45AC0A?sharingId=50BC0E670131238A"
-            >
-              <img
-                src="microsoft-certified-associate-badge.svg"
-                alt="Microsoft Certified: Power Platform Developer Associate"
-                title="Microsoft Certified: Power Platform Developer Associate"
-                width="150px"
-                height="200px"
-              />
-              Power Platform Developer Associate
-            </a>
-          </div>
-          <div class="col-md-2 col-6">
-            <div
-              data-iframe-width="150"
-              data-iframe-height="270"
-              data-share-badge-id="0c18f7e8-4c0c-4051-9a65-3e97260ee15c"
-              data-share-badge-host="https://www.youracclaim.com"
-            ></div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-2 col-6">
-            <div
-              data-iframe-width="150"
-              data-iframe-height="270"
-              data-share-badge-id="ac2fb9de-8920-42a5-bd56-354ebf7e787d"
-              data-share-badge-host="https://www.credly.com"
-            ></div>
-          </div>
-          <div class="col-md-2 col-6">
-            <div
-              data-iframe-width="150"
-              data-iframe-height="270"
-              data-share-badge-id="26fb4327-bd68-4ca5-bf6d-14a9ba4e4a08"
-              data-share-badge-host="https://www.youracclaim.com"
-            ></div>
-          </div>
-          <div class="col-md-2 col-6">
-            <div
-              data-iframe-width="150"
-              data-iframe-height="270"
-              data-share-badge-id="97750552-a258-415f-95f7-162955b01043"
-              data-share-badge-host="https://www.youracclaim.com"
-            ></div>
-          </div>
-          <div class="col-md-2 col-6">
-            <div
-              data-iframe-width="150"
-              data-iframe-height="270"
-              data-share-badge-id="4ac5c9e1-addf-40ba-9fdf-ae1eaee466e1"
-              data-share-badge-host="https://www.youracclaim.com"
-            ></div>
-          </div>
-          <div class="col-md-2 col-6 text-center">
-            <a
-              href="https://www.credly.com/users/dan-padmore"
-              class="align-middle"
-              >More...</a
-            >
-          </div>
-        </div>
+        </section>
 
-        <div class="row">
-          <div class="col">
-            <article class="mt-5">
-              <header>
-                <h2>Certifications &amp; Education</h2>
-              </header>
-              <ul>
-                <li>
-                  Microsoft Certified:
-                  <a
-                    href="https://learn.microsoft.com/api/credentials/share/en-us/padmore/D97FEA5AFF45AC0A?sharingId=50BC0E670131238A"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >Power Platform Developer Associate</a
+        <!-- Digital Product Development & Industry Experience -->
+        <section class="cta">
+          <div
+            style="
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              margin-bottom: var(--spacing-md);
+            "
+          >
+            <h2 style="margin-bottom: 0">🚀 Digital Product Development</h2>
+            <a
+              href="https://www.linkedin.com/in/dan-padmore-1546322b"
+              class="linkedin-button"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path
+                  d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
+                />
+              </svg>
+              Let's Connect
+            </a>
+          </div>
+          <div>
+            <div class="cta-text">
+              <p>
+                Building a digital product or in-house application? Azure/.NET
+                architect who ships MVPs and scales to production.
+              </p>
+              <p
+                style="
+                  margin-top: var(--spacing-md);
+                  margin-bottom: var(--spacing-sm);
+                  font-weight: 600;
+                  color: var(--color-text);
+                "
+              >
+                Industry Experience:
+              </p>
+              <ul style="list-style: none; padding-left: 0; margin: 0">
+                <li
+                  style="
+                    padding: var(--spacing-xs) 0;
+                    padding-left: var(--spacing-md);
+                    position: relative;
+                  "
+                >
+                  <span
+                    style="
+                      position: absolute;
+                      left: 0;
+                      color: var(--color-primary);
+                      font-weight: bold;
+                    "
+                    >▸</span
                   >
-                  &mdash; 2025
+                  <strong>Healthcare:</strong> AI-powered patient care solutions
                 </li>
-                <li>
-                  <a
-                    href="https://www.credly.com/badges/0c18f7e8-4c0c-4051-9a65-3e97260ee15c/public_url"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >IBM Certified Professional Developer - Cloud v5</a
+                <li
+                  style="
+                    padding: var(--spacing-xs) 0;
+                    padding-left: var(--spacing-md);
+                    position: relative;
+                  "
+                >
+                  <span
+                    style="
+                      position: absolute;
+                      left: 0;
+                      color: var(--color-primary);
+                      font-weight: bold;
+                    "
+                    >▸</span
                   >
-                  &mdash; 2022
+                  <strong>Enterprise Integration:</strong> Legacy and modern
+                  system connectivity
                 </li>
-                <li>
-                  PXL:
-                  <a
-                    href="https://www.pxl-next.be/opleidingen/ai-business-architect"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >Postgraduate AI Business Architect</a
+                <li
+                  style="
+                    padding: var(--spacing-xs) 0;
+                    padding-left: var(--spacing-md);
+                    position: relative;
+                  "
+                >
+                  <span
+                    style="
+                      position: absolute;
+                      left: 0;
+                      color: var(--color-primary);
+                      font-weight: bold;
+                    "
+                    >▸</span
                   >
-                  &mdash; 2022
+                  <strong>Digital Transformation:</strong> Payroll platforms &
+                  business modernization
                 </li>
-                <li>
-                  The Linux Foundation:
-                  <a
-                    href="https://www.credly.com/badges/4ac5c9e1-addf-40ba-9fdf-ae1eaee466e1/public_url"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >CHFD: Certified Hyperledger Fabric Developer</a
+                <li
+                  style="
+                    padding: var(--spacing-xs) 0;
+                    padding-left: var(--spacing-md);
+                    position: relative;
+                  "
+                >
+                  <span
+                    style="
+                      position: absolute;
+                      left: 0;
+                      color: var(--color-primary);
+                      font-weight: bold;
+                    "
+                    >▸</span
                   >
-                  &mdash; 2022
+                  <strong>IoT & Smart Tech:</strong> High-traffic smart home
+                  platforms
                 </li>
-                <li>
-                  Microsoft Certified:
-                  <a
-                    href="https://learn.microsoft.com/en-us/users/padmore/credentials/b8ad23f8da37f263"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >Azure Solutions Architect Expert</a
+                <li
+                  style="
+                    padding: var(--spacing-xs) 0;
+                    padding-left: var(--spacing-md);
+                    position: relative;
+                  "
+                >
+                  <span
+                    style="
+                      position: absolute;
+                      left: 0;
+                      color: var(--color-primary);
+                      font-weight: bold;
+                    "
+                    >▸</span
                   >
-                  &mdash; 2021
+                  <strong>Government & Public Safety:</strong> National police &
+                  public sector systems
                 </li>
-                <li>
-                  Amazon Web Services Certified:
-                  <a
-                    href="https://www.youracclaim.com/badges/26fb4327-bd68-4ca5-bf6d-14a9ba4e4a08/public_url"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >AWS Certified Solutions Architect – Associate</a
+                <li
+                  style="
+                    padding: var(--spacing-xs) 0;
+                    padding-left: var(--spacing-md);
+                    position: relative;
+                  "
+                >
+                  <span
+                    style="
+                      position: absolute;
+                      left: 0;
+                      color: var(--color-primary);
+                      font-weight: bold;
+                    "
+                    >▸</span
                   >
-                  &mdash; 2021
-                </li>
-                <li>
-                  Google Cloud Certified:
-                  <a
-                    href="https://www.credential.net/665eb847-91ea-4495-bbbc-0b12ee569efb"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >Associate Cloud Engineer</a
-                  >
-                  &mdash; 2021
-                </li>
-                <li>
-                  The Linux Foundation:
-                  <a
-                    href="https://www.youracclaim.com/badges/97750552-a258-415f-95f7-162955b01043/public_url"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >CKAD: Certified Kubernetes Application Developer</a
-                  >
-                  &mdash; 2021
-                </li>
-                <li>
-                  Microsoft Certified:
-                  <a
-                    href="https://learn.microsoft.com/api/credentials/share/en-us/padmore/A34E35CFF3C8141E?sharingId=50BC0E670131238A"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >Azure AI Engineer Associate</a
-                  >
-                  &mdash; 2020
-                </li>
-                <li>MCPS: Microsoft Certified Professional &mdash; 2014</li>
-                <li>
-                  <a
-                    href="https://www.credly.com/badges/8589e41c-6b93-4427-853f-0ea91f31ae03"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >Programming in C# Specialist &mdash; 2014</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://idesign.net/Clinics/Architecture-Clinic"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >IDesign Architecture Clinic</a
-                  >
-                  &mdash; 2014
-                </li>
-                <li>MCTS: .NET Framework 4, Web Applications &mdash; 2011</li>
-                <li>
-                  Graduaat Informatica - Programmeren @ CVO Antwerpen-Zuid
-                  &mdash; 2003 - 2006
+                  <strong>Cloud Migration:</strong> On-premise to cloud
+                  transformation
                 </li>
               </ul>
-            </article>
+            </div>
           </div>
-        </div>
+        </section>
+
+        <!-- Recruiters & Technical Expertise -->
+        <section class="cta">
+          <div
+            style="
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              margin-bottom: var(--spacing-md);
+            "
+          >
+            <h2 style="margin-bottom: 0">👋 Recruiters</h2>
+            <a
+              href="https://www.linkedin.com/in/dan-padmore-1546322b"
+              class="linkedin-button"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path
+                  d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
+                />
+              </svg>
+              Share Opportunity
+            </a>
+          </div>
+          <div>
+            <div class="cta-text">
+              <p>
+                Technical Architect | Senior .NET Developer | Full Stack Angular
+                + .NET Developer. 20+ years. Contract in Antwerp, Belgium or
+                remote.
+              </p>
+              <p
+                style="
+                  margin-top: var(--spacing-md);
+                  margin-bottom: var(--spacing-sm);
+                  font-weight: 600;
+                  color: var(--color-text);
+                "
+              >
+                Technical Expertise:
+              </p>
+              <div class="expertise-grid" style="margin-bottom: 0">
+                <div>
+                  <h4
+                    style="
+                      margin-bottom: var(--spacing-xs);
+                      color: var(--color-text);
+                      font-size: 1rem;
+                    "
+                  >
+                    Backend Development
+                  </h4>
+                  <ul style="list-style: none; padding-left: 0; margin: 0">
+                    <li style="padding: 2px 0; font-size: 0.9rem">
+                      ⭐⭐⭐ .NET/C# (20+ years)
+                    </li>
+                    <li style="padding: 2px 0; font-size: 0.9rem">
+                      ⭐⭐⭐ ASP.NET Core (REST APIs)
+                    </li>
+                    <li style="padding: 2px 0; font-size: 0.9rem">
+                      ⭐⭐⭐ Entity Framework
+                    </li>
+                    <li style="padding: 2px 0; font-size: 0.9rem">
+                      ⭐⭐⭐ Microservices architecture
+                    </li>
+                    <li style="padding: 2px 0; font-size: 0.9rem">
+                      ⭐⭐⭐ Message Queues (Azure Service Bus, RabbitMQ)
+                    </li>
+                    <li style="padding: 2px 0; font-size: 0.9rem">
+                      ⭐ Node.js
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <h4
+                    style="
+                      margin-bottom: var(--spacing-xs);
+                      color: var(--color-text);
+                      font-size: 1rem;
+                    "
+                  >
+                    System Design & Cloud
+                  </h4>
+                  <ul style="list-style: none; padding-left: 0; margin: 0">
+                    <li style="padding: 2px 0; font-size: 0.9rem">
+                      ⭐⭐⭐ Azure Solutions Architect Expert
+                    </li>
+                    <li style="padding: 2px 0; font-size: 0.9rem">
+                      ⭐⭐⭐ Cloud-native & distributed systems
+                    </li>
+                    <li style="padding: 2px 0; font-size: 0.9rem">
+                      ⭐⭐⭐ Domain driven design
+                    </li>
+                    <li style="padding: 2px 0; font-size: 0.9rem">
+                      ⭐⭐⭐ Event-driven design & event sourcing
+                    </li>
+                    <li style="padding: 2px 0; font-size: 0.9rem">
+                      ⭐⭐⭐ API strategy (REST, GraphQL)
+                    </li>
+                    <li style="padding: 2px 0; font-size: 0.9rem">
+                      ⭐⭐⭐ Azure DevOps, Bicep, IaC
+                    </li>
+                    <li style="padding: 2px 0; font-size: 0.9rem">
+                      ⭐⭐ Kubernetes & Docker
+                    </li>
+                    <li style="padding: 2px 0; font-size: 0.9rem">
+                      ⭐ AWS & GCP (certified)
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <h4
+                    style="
+                      margin-bottom: var(--spacing-xs);
+                      color: var(--color-text);
+                      font-size: 1rem;
+                    "
+                  >
+                    Frontend, Testing & Data
+                  </h4>
+                  <ul style="list-style: none; padding-left: 0; margin: 0">
+                    <li style="padding: 2px 0; font-size: 0.9rem">
+                      ⭐⭐⭐ Automated testing (unit/integration/e2e)
+                    </li>
+                    <li style="padding: 2px 0; font-size: 0.9rem">
+                      ⭐⭐⭐ SQL Server
+                    </li>
+                    <li style="padding: 2px 0; font-size: 0.9rem">
+                      ⭐⭐ PostgreSQL
+                    </li>
+                    <li style="padding: 2px 0; font-size: 0.9rem">
+                      ⭐⭐⭐ HTML/CSS
+                    </li>
+                    <li style="padding: 2px 0; font-size: 0.9rem">
+                      ⭐⭐⭐ JavaScript/TypeScript
+                    </li>
+                    <li style="padding: 2px 0; font-size: 0.9rem">
+                      ⭐⭐ Angular
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Complete Certifications -->
+        <section>
+          <div style="margin-bottom: var(--spacing-lg)">
+            <h2 style="margin-bottom: var(--spacing-xs)">
+              Certifications &amp; Education
+            </h2>
+            <p
+              style="
+                color: var(--color-text-secondary);
+                font-size: 0.9rem;
+                margin: 0;
+              "
+            >
+              <a
+                href="https://www.credly.com/users/dan-padmore"
+                target="_blank"
+                rel="noopener noreferrer"
+                style="color: var(--color-text-secondary)"
+                >View all certifications on Credly →</a
+              >
+            </p>
+          </div>
+
+          <div class="cert-category">
+            <h3>Solutions & Cloud Architecture</h3>
+            <ul>
+              <li>
+                <strong>Microsoft Certified:</strong>
+                <a
+                  href="https://learn.microsoft.com/en-us/users/padmore/credentials/b8ad23f8da37f263"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Azure Solutions Architect Expert</a
+                >
+                — 2021
+              </li>
+              <li>
+                <strong>Amazon Web Services Certified:</strong>
+                <a
+                  href="https://www.credly.com/badges/26fb4327-bd68-4ca5-bf6d-14a9ba4e4a08/public_url"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >AWS Certified Solutions Architect – Associate</a
+                >
+                — 2021
+              </li>
+              <li>
+                <strong>Google Cloud Certified:</strong>
+                <a
+                  href="https://www.credential.net/665eb847-91ea-4495-bbbc-0b12ee569efb"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Associate Cloud Engineer</a
+                >
+                — 2021
+              </li>
+              <li>
+                <strong>IBM Cloud:</strong>
+                <a
+                  href="https://www.credly.com/badges/0c18f7e8-4c0c-4051-9a65-3e97260ee15c/public_url"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >IBM Certified Professional Developer - Cloud v5</a
+                >
+                — 2022
+              </li>
+              <li>
+                <strong>PXL:</strong>
+                <a
+                  href="https://www.pxl-next.be/opleidingen/ai-business-architect"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Postgraduate AI Business Architect</a
+                >
+                — 2022
+              </li>
+              <li>
+                <a
+                  href="https://idesign.net/Clinics/Architecture-Clinic"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >IDesign Architecture Clinic</a
+                >
+                — 2014
+              </li>
+            </ul>
+          </div>
+
+          <div class="cert-category">
+            <h3>AI & Emerging Technologies</h3>
+            <ul>
+              <li>
+                <strong>Microsoft Certified:</strong>
+                <a
+                  href="https://learn.microsoft.com/api/credentials/share/en-us/padmore/A34E35CFF3C8141E?sharingId=50BC0E670131238A"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Azure AI Engineer Associate</a
+                >
+                — 2020
+              </li>
+              <li>
+                <strong>The Linux Foundation:</strong>
+                <a
+                  href="https://www.credly.com/badges/4ac5c9e1-addf-40ba-9fdf-ae1eaee466e1/public_url"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >CHFD: Certified Hyperledger Fabric Developer</a
+                >
+                (blockchain) — 2022
+              </li>
+            </ul>
+          </div>
+
+          <div class="cert-category">
+            <h3>Development & Implementation</h3>
+            <ul>
+              <li>
+                <strong>Microsoft Certified:</strong>
+                <a
+                  href="https://learn.microsoft.com/api/credentials/share/en-us/padmore/D97FEA5AFF45AC0A?sharingId=50BC0E670131238A"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Power Platform Developer Associate</a
+                >
+                — 2025
+              </li>
+              <li>
+                <strong>The Linux Foundation:</strong>
+                <a
+                  href="https://www.credly.com/badges/97750552-a258-415f-95f7-162955b01043/public_url"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >CKAD: Certified Kubernetes Application Developer</a
+                >
+                — 2021
+              </li>
+              <li>
+                <strong>Microsoft Certified Professional:</strong>
+                <a
+                  href="https://www.credly.com/badges/8589e41c-6b93-4427-853f-0ea91f31ae03"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Programming in C# Specialist</a
+                >
+                — 2014
+              </li>
+              <li>
+                <strong>Microsoft Certified Technology Specialist:</strong> .NET
+                Framework 4, Web Applications — 2011
+              </li>
+            </ul>
+          </div>
+
+          <div class="cert-category">
+            <h3>Foundation</h3>
+            <ul>
+              <li>
+                Graduaat Informatica - Programmeren @ CVO Antwerpen-Zuid — 2003
+                - 2006
+              </li>
+            </ul>
+          </div>
+        </section>
       </main>
 
-      <footer class="row">
-        <div class="col">
-          <hr />
-          <ul class="list-inline">
-            <li class="list-inline-item">
+      <footer>
+        <nav aria-label="Professional links">
+          <ul>
+            <li>
               <a
                 href="https://kbopub.economie.fgov.be/kbopub/zoeknummerform.html?lang=en&nummer=0695483763"
-                class="text-decoration-none"
+                target="_blank"
+                rel="noopener noreferrer"
                 >BE 0695.483.763</a
               >
             </li>
-            <li class="list-inline-item">
+            <li>
               <a
                 href="https://www.linkedin.com/in/dan-padmore-1546322b"
+                target="_blank"
                 rel="noopener noreferrer"
                 >LinkedIn</a
               >
             </li>
-            <li class="list-inline-item">
+            <li>
               <a
-                href="https://docs.microsoft.com/en-us/users/padmore/"
+                href="https://learn.microsoft.com/en-us/users/padmore/"
                 target="_blank"
                 rel="noopener noreferrer"
                 >Microsoft Learn</a
               >
             </li>
-            <li class="list-inline-item">
+            <li>
               <a
                 href="https://github.com/danpadmore"
                 target="_blank"
@@ -343,7 +1121,7 @@
                 >GitHub</a
               >
             </li>
-            <li class="list-inline-item">
+            <li>
               <a
                 href="https://www.credly.com/users/dan-padmore"
                 target="_blank"
@@ -351,15 +1129,15 @@
                 >Credly</a
               >
             </li>
-            <li class="list-inline-item">
+            <li>
               <a
                 href="https://www.goodreads.com/review/list/48044313-dan?ref=nav_mybooks&shelf=technical"
                 target="_blank"
                 rel="noopener noreferrer"
-                >Technical books shelf</a
+                >Technical Reading</a
               >
             </li>
-            <li class="list-inline-item">
+            <li>
               <a
                 href="https://danpadmore.github.io/blog/"
                 target="_blank"
@@ -367,18 +1145,8 @@
                 >Blog</a
               >
             </li>
-            <li class="list-inline-item">
-              <del
-                ><a
-                  href="https://sparetimecode.wordpress.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >Blog</a
-                ></del
-              >
-            </li>
           </ul>
-        </div>
+        </nav>
       </footer>
     </div>
   </body>
