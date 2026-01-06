@@ -71,8 +71,10 @@ body {
 }
 
 .hero-badge {
-  width: clamp(100px, 12vw, 140px);
-  text-align: center;
+  display: flex;
+  gap: var(--spacing-md);
+  align-items: center;
+  justify-content: center;
 }
 
 .hero-badge a {
@@ -83,6 +85,8 @@ body {
   align-items: center;
   gap: var(--spacing-xs);
   transition: transform 0.2s;
+  width: clamp(80px, 10vw, 120px);
+  text-align: center;
 }
 
 .hero-badge a:hover {
