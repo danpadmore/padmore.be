@@ -91,6 +91,33 @@
   </head>
 
   <body>
+    <!-- Theme Toggle Button -->
+    <button
+      class="theme-toggle"
+      id="theme-toggle"
+      aria-label="Toggle theme"
+      title="Toggle light/dark theme"
+    >
+      <svg
+        id="theme-icon-sun"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        style="display: none"
+      >
+        <path
+          d="M12 18c-3.3 0-6-2.7-6-6s2.7-6 6-6 6 2.7 6 6-2.7 6-6 6zm0-10c-2.2 0-4 1.8-4 4s1.8 4 4 4 4-1.8 4-4-1.8-4-4-4zM13 2h-2v3h2V2zm0 17h-2v3h2v-3zM5 11H2v2h3v-2zm17 0h-3v2h3v-2zM6.3 4.9L4.9 6.3l2.1 2.1 1.4-1.4-2.1-2.1zm12.7 12.7l-1.4 1.4 2.1 2.1 1.4-1.4-2.1-2.1zM19.1 6.3l-2.1 2.1 1.4 1.4 2.1-2.1-1.4-1.4zM6.3 19.1l2.1-2.1-1.4-1.4-2.1 2.1 1.4 1.4z"
+        />
+      </svg>
+      <svg
+        id="theme-icon-moon"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9 9-4.03 9-9c0-.46-.04-.92-.1-1.36-.98 1.37-2.58 2.26-4.4 2.26-2.98 0-5.4-2.42-5.4-5.4 0-1.81.89-3.42 2.26-4.4-.44-.06-.9-.1-1.36-.1z"
+        />
+      </svg>
+    </button>
     <div class="container">
       <main>
         <!-- Hero Section -->
@@ -504,5 +531,61 @@
         </nav>
       </footer>
     </div>
+
+    <script>
+      // Theme switching functionality
+      (function () {
+        const themeToggle = document.getElementById("theme-toggle");
+        const sunIcon = document.getElementById("theme-icon-sun");
+        const moonIcon = document.getElementById("theme-icon-moon");
+        const htmlElement = document.documentElement;
+
+        // Get theme from localStorage or system preference
+        function getPreferredTheme() {
+          const storedTheme = localStorage.getItem("theme");
+          if (storedTheme) {
+            return storedTheme;
+          }
+          return window.matchMedia("(prefers-color-scheme: dark)").matches
+            ? "dark"
+            : "light";
+        }
+
+        // Set theme
+        function setTheme(theme) {
+          htmlElement.setAttribute("data-theme", theme);
+          localStorage.setItem("theme", theme);
+
+          // Toggle icon visibility
+          if (theme === "dark") {
+            sunIcon.style.display = "block";
+            moonIcon.style.display = "none";
+          } else {
+            sunIcon.style.display = "none";
+            moonIcon.style.display = "block";
+          }
+        }
+
+        // Initialize theme on page load
+        const currentTheme = getPreferredTheme();
+        setTheme(currentTheme);
+
+        // Toggle theme on button click
+        themeToggle.addEventListener("click", function () {
+          const currentTheme = htmlElement.getAttribute("data-theme");
+          const newTheme = currentTheme === "dark" ? "light" : "dark";
+          setTheme(newTheme);
+        });
+
+        // Listen for system theme changes
+        window
+          .matchMedia("(prefers-color-scheme: dark)")
+          .addEventListener("change", function (e) {
+            if (!localStorage.getItem("theme")) {
+              setTheme(e.matches ? "dark" : "light");
+            }
+          });
+      })();
+    </script>
   </body>
 </html>
