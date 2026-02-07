@@ -531,7 +531,7 @@ footer nav a {
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  box-shadow: var(--shadow-lg);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(0, 0, 0, 0.05);
   transition: all 0.3s ease;
   z-index: 1000;
 }
@@ -539,6 +539,7 @@ footer nav a {
 .theme-toggle:hover {
   background: var(--color-surface-hover);
   transform: scale(1.1);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25), 0 0 0 1px rgba(0, 0, 0, 0.1);
 }
 
 .theme-toggle svg {
