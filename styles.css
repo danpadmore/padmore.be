@@ -88,7 +88,7 @@ body {
 .hero-badge {
   display: flex;
   gap: var(--spacing-md);
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
 }
 
@@ -573,6 +573,7 @@ footer nav a {
     grid-row: 3;
     margin-top: var(--spacing-md);
     margin-bottom: 0;
+    align-items: flex-start;
   }
 
   .expertise-grid {
